@@ -1,6 +1,6 @@
-# Diabetes Terminal Predictor
+# Diabetes Insight
 
-A polished Flask application with a cyberpunk terminal interface for predicting diabetes using a trained Scikit-Learn model.
+A Flask application for estimating diabetes risk with a trained Scikit-Learn model, presented in a calm, dark interface inspired by the project's visual design reference.
 
 ## Architecture
 
@@ -8,7 +8,7 @@ A polished Flask application with a cyberpunk terminal interface for predicting 
 - `predictor.py`: Model training, loading, validation, and prediction logic.
 - `translations.py`: Centralized translation dictionary for Spanish and English.
 - `templates/index.html`: User interface with dynamic form generation.
-- `static/css/style.css`: Cyberpunk terminal design.
+- `static/css/style.css`: Responsive visual system and interface styles.
 - `static/js/app.js`: Frontend interactivity, validation, language switching, and progress animation.
 - `diabetes.csv`: Dataset used for training.
 - `model.pkl`: Serialized trained model and scaler.
@@ -22,10 +22,11 @@ A polished Flask application with a cyberpunk terminal interface for predicting 
   - Standardizes input values with `StandardScaler`.
   - Trains an `SVC(kernel='linear')` model.
 - Two languages supported: English and Español.
-- Terminal-inspired cyberpunk UI.
+- Responsive frosted-glass interface with Spanish and English translations.
 - Input validation for required and non-negative values.
 - Shows predicted label, confidence, and explanation.
 - Progress bar and clear button.
+- Includes a notice that predictions are informational and not medical advice.
 
 ## Local setup
 
